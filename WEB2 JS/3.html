@@ -4,30 +4,15 @@
 <head>
   <title>WEB1 - JavaScript</title>
   <meta charset="utf-8">
-  <style>
-    .js {
-      font-weight: bold;
-      color: indianred;
-    }
-    #first {
-      color: red;
-    }
-    span {
-      color: skyblue;
-    }
-  </style>
+  <script src="color.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
 
-  <input type="button" value="night" onclick="
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
+  <input type="button" id="night_day"  value='night' onclick="
+      nigthdayHandler(this);
   ">
 
   <ol>
